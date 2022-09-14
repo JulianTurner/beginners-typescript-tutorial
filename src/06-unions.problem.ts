@@ -8,7 +8,13 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+  role: Role;
+}
+
+export enum Role {
+	  Admin = "admin",
+	  User = "user",
+	  SuperAdmin = "super-admin"
 }
 
 export const defaultUser: User = {

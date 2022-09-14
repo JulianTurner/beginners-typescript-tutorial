@@ -1,6 +1,7 @@
 import { expect, it } from "vitest";
+import { number } from "zod";
 
-export const addTwoNumbers = (a, b) => {
+export const addTwoNumbers = (a: number, b: number) => {
   return a + b;
 };
 

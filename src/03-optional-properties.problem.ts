@@ -9,7 +9,8 @@ export const getName = (params: { first: string; last: string }) => {
 
 it("Should work with just the first name", () => {
   const name = getName({
-    first: "Matt",
+	  first: "Matt",
+	  last: ""
   });
 
   expect(name).toEqual("Matt");
